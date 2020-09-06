@@ -1,0 +1,20 @@
+.users-information{
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+    padding-bottom:10px
+
+}
+.user-info h4{
+    font-weight: 400;
+    color: blue;
+}
+.user-info{
+    line-height: 40%;
+    text-align: center;
+    margin-left: 10px;
+}
+.btn{
+    cursor:pointer;
+    background-color: goldenrod;
+}
