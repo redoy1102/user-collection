@@ -3,7 +3,6 @@ import { fakeData } from '../data/./fakeData';
 import './Shop.css'
 import Info from '../Info/Info';
 import Count from '../Count/Count';
-
 const Shop = () => {
     console.log(fakeData);
     const [users, setUsers] = useState([])
@@ -18,9 +17,6 @@ const Shop = () => {
        const newCount = [...count, user]
        setCount(newCount);
     }
-
-    
-
     return (
         <div className="main-container">
             <div className="users-container">
@@ -28,7 +24,6 @@ const Shop = () => {
                         users.map(user => <Info handleAddFriend={handleAddFriend} user={user} ></Info>)
                     }
             </div>
-
             <div className="count-container">
                 <Count count={count} ></Count>
             </div>
